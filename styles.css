@@ -1,5 +1,6 @@
 body{
     margin:0px;
+    overflow: hidden;
 }
 .board{
     background-color: blue;
@@ -18,32 +19,40 @@ body{
     
 }
 */
+.contenedor 
+{
+    background-color: red;
+    position:relative;
+    width: 155px;
+    height: 172px;
+}
 .player{
     height: 138px;
     width: 125px;
     background: url("dino.png");
     margin: 0 auto;
     /*background-position: 252px 0;*/
-    
+    border: 1px solid yellow;
     position: absolute;
     left: 0%;
-    bottom: 18%;
+    bottom: -25%;
     animation:correr 1s steps(8)  infinite;
 }
 
-/* .enemigo2{
-    height: 60px;
-    width: 109px;
+
+.enemigo2{
+    height: 160px;
+    width: 125px;
     background: url("enemigo2.png");
-   
+    border: 1px solid yellow;
     margin: 0 auto;
-    /*background-position: 252px 0;
+    background-position: 252px 0;
     
     position: absolute;
     left: 78%;
     bottom: 18%;
     animation:correre 1s steps(9)  infinite;
-} */
+}
 
 .player img{   
     width: 100%;
@@ -51,10 +60,10 @@ body{
 }
 
 .background{
-    height: 100%;
+    height: 150%;
     width:  200%;
     position: absolute;
-    background: url("./assets/CI_NSwitchDS_SuperMarioBros35_StageBackground_Level2_Desktop.jpg");
+    background: url("./assets/background.png");
     background-repeat: repeat-x;
     
     /* animation: animatedBackground 3s linear infinite; */
